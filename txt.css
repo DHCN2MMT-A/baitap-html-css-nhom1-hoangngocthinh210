@@ -1,18 +1,45 @@
-body {
-    font-family: Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    }
+
+.grid{
+    display: grid;
+    grid-template-columns:0.3fr 1fr;
+    grid-template-rows: 90px 1fr 1100px 1fr;
+    grid-template-areas: 
+    "title title"
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+
+.title{
+    grid-area: title;
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.content{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
 a {
     text-decoration: none;
     color: #3B8BBA;
     }
-#menu ul {
+.menu ul {
     background: #1F568B;
     list-style-type: none;
     text-align: center;
     }
-#menu li {
+.menu li {
     color: #f1f1f1;
     display: inline-block;
     width: 120px;
@@ -20,30 +47,21 @@ a {
     line-height: 40px;
     margin-left: -5px;
     }
-#menu a{
+.menu a{
     text-decoration: none;
     color: #fff;
     display: block;
     }
-#menu a:hover {
+.menu a:hover {
     background: #F1F1F1;
     color: #333;
     }
-#vd{
-    text-align: center
-}
-#gt {
-    padding: 24px 20%;
-    background: #EFEFEF;
-    border: 1px solid#E8E8E8;
-    text-align: center
-    }
-#tt{
-    text-align: center
-}
-#footer{
-    text-align: center;
-    border: 1px solid#E8E8E8;
-    background: #EFEFEF;
-    margin-top: 30px        
-    }
+
+.footer{
+        text-align: center;
+        border: 1px solid#E8E8E8;
+        background: #EFEFEF;
+        margin-top: 80px        
+        }
+    
+   
